@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- https://www.npmjs.com/package/aos -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Animação -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <!-- Animação -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE</title>
+</head>
+<body>  
+    <form data-aos="fade-down" data-aos-delay="300">
+        <img class="foto-perfil" src="https://i.ibb.co/WvDshm3/IMG-2952-2.jpg"/>
+        <h3>Luiz Fernando</h3>
+
+        <section class="portifolio">
+
+           <a href="./curriculo.html">
+            <button type="button" class="btn-curriculo">Curriculo</button>
+            </a>
+
+            <a href="./linkdin.html">
+            <button class="btn-LinkedIn">LinkedIn</button>
+            </a>
+
+            <button class="btn-GitHub">GitHub</button>
+        </section>
+    </form>
+       
+    <style>
+        form{
+        background-color: #070d12;
+        width: 370px;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 300px;
+        gap: 5px;
+        border: 2px solid #e126d9;
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        }
+        body{
+            background-image: url(https://dileal.github.io/mini-portfolio-mapadev/src/Imagens/fundo-site.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+        }
+        button{
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(162,148,233,1) 58%);
+            border-radius: 7px;
+        
+            font-style: initial;
+
+            border: none;
+            padding: 10px;
+            height: 30px;
+            width: 100%;
+            cursor: pointer;
+           
+        }
+        .portifolio{
+        gap: 25px;
+        
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+        width: 400px;
+    }
+    .img-fundo{
+        height: 100vh;
+    }
+    .foto-perfil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid #e126d9;
+    }
+    </style>
+<script defer> 
+    AOS.init(); //inicial a aniamação
+</script>
+
+</body>
+</html>
